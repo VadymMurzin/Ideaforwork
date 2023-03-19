@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lithosphere Animation</title>
+    <style>
+      #map {
+        width: 800px;
+        height: 500px;
+        position: relative;
+        background-image: url("world_map.jpg");
+        background-size: cover;
+      }
+      .plate {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.3);
+        border: 1px solid red;
+        transition: all 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map">
+      <div id="plate1" class="plate" style="left: 100px; top: 200px"></div>
+      <div id="plate2" class="plate" style="left: 400px; top: 100px"></div>
+      <div id="plate3" class="plate" style="left: 600px; top: 300px"></div>
+    </div>
+    <script src="lithosphere_animation.js"></script>
+  </body>
+</html>
